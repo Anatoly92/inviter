@@ -1,0 +1,1 @@
+var ngAppInviter = angular.module('ngAppInviter', []);

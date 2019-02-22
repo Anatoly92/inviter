@@ -1,0 +1,12 @@
+﻿<html>
+    <head>
+        <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="Scripts/app/appInviter.js"></script>
+        <script src="Scripts/app/Directive/inviter/inviter.js"></script>
+    </head>
+    <body ng-app="ngAppInviter">
+        <inviter ng-model="emails"></inviter>
+        {{emails | json}}
+    </body>
+</html>

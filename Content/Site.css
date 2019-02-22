@@ -1,0 +1,111 @@
+﻿.inviter {
+    width: 100%;
+    float: left;
+    position: relative;
+    min-height: 36px;
+}
+
+.inviter-recipient-area {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-bottom: 1px solid #cbcbcb;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    width: 100%;
+    overflow: hidden;
+    display: inline-block
+}
+
+.apps-share-chips-editor {
+    margin-bottom: 4px;
+    max-height: 200px;
+    overflow: auto;
+    padding-top: 1px;
+    width: inherit;
+}
+
+.apps-share-chips-input {
+    display: inline-block;
+    margin: 10px 4px 0 4px;
+    vertical-align: middle;
+    background: none;
+    border: 0;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    height: 23px;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 0 0 5px;
+    position: relative;
+    resize: none;
+}
+
+.apps-share-chips-editor-hidden-input {
+    left: -10000px;
+    width: 1px;
+    position: absolute;
+}
+
+.suggested-recipients {
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    color: #444;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    position: absolute;
+    left: 0;
+    width: inherit;
+}
+
+.apps-share-chips-chip {
+    background: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    color: #444;
+    margin: 4px 3px 0 5px;
+    outline: none;
+    vertical-align: middle;
+    cursor: default;
+    padding: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.apps-share-chips-chip-content {
+    margin-left: 4px;
+}
+
+.apps-share-chips-chip-content {
+    display: inline-block;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.apps-share-chips-icon-wrapper {
+    display: inline-block;
+}
+
+.apps-share-chips-icon {
+    vertical-align: middle;
+}
+
+
+
+.apps-share-chips-icon-x {
+    background: no-repeat url(//ssl.gstatic.com/docs/documents/share/images/sprite-22.svg) 0 -473px;
+    opacity: .6;
+}
+
+.apps-share-chips-icon {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+}

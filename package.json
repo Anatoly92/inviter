@@ -1,0 +1,19 @@
+{
+  "name": "inviter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.7.6",
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "node-hot-loader": "^1.12.3",
+    "webpack": "^4.29.3"
+  },
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "author": "",
+  "license": "ISC"
+}
