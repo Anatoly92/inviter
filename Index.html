@@ -1,12 +1,13 @@
 ﻿<html>
     <head>
         <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="Scripts/app/appInviter.js"></script>
         <script src="Scripts/app/Directive/inviter/inviter.js"></script>
     </head>
     <body ng-app="ngAppInviter">
-        <inviter ng-model="emails"></inviter>
+        <inviter ng-model="emails" style="width: 468px; height: 320px; background-color: #f5f5f5; padding-left: 32px;"></inviter>
         {{emails | json}}
     </body>
 </html>

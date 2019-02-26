@@ -3,6 +3,7 @@
     float: left;
     position: relative;
     min-height: 36px;
+    margin-top: 34px
 }
 
 .inviter-recipient-area {
@@ -95,8 +96,6 @@
     vertical-align: middle;
 }
 
-
-
 .apps-share-chips-icon-x {
     background: no-repeat url(//ssl.gstatic.com/docs/documents/share/images/sprite-22.svg) 0 -473px;
     opacity: .6;
@@ -108,4 +107,23 @@
     display: inline-block;
     height: 21px;
     width: 21px;
+}
+
+.apps-share-chips-chip-warning {
+    background: white;
+    border: none;
+    border-bottom: 2px dotted #d14836;
+    color: black;
+    padding-bottom: 0;
+}
+
+.simple-sharing-people-heading{
+    font-family: Open Sans;
+    font-size: 20px;
+}
+
+.pidor{
+    font-weight: bolder;
+    letter-spacing: 0.8px;
+    font-size: 20px;
 }

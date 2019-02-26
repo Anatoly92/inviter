@@ -1,5 +1,5 @@
 <div>
-    <div class="simple-sharing-people-heading" role="heading" aria-level="2">Люди</div>
+    <div class="simple-sharing-people-heading" role="heading" aria-level="2">Share <span class="pidor">Board name</span> with other</div>
     <div class="simple-sharing-inviter">
         <div>
             <div class="inviter">
@@ -8,8 +8,8 @@
                         <input class="apps-share-chips-editor-hidden-input" aria-hidden="true" tabindex="-1" aria-activedescendant=":1k">
                         <div id=":1k" role="group"></div>
                         <span class="apps-share-chips-container" ng-if="inviterEmails.length > 0"  ng-repeat="email in inviterEmails track by $index" >
-                            <span class="apps-share-chips-chip" id=":2i" aria-selected="false" tabindex="-1" style="user-select: none;">
-                                <div class="apps-share-chips-chip-content" style="max-width: 348px;">{{email}}</div>
+                            <span class="apps-share-chips-chip" ng-class={'apps-share-chips-chip-warning':!email.validEmail} id=":2i" aria-selected="false" tabindex="-1" style="user-select: none;">
+                                <div class="apps-share-chips-chip-content" style="max-width: 348px;">{{email.emailValue}}</div>
                                 <div class="apps-share-chips-icon-wrapper">
                                     <span class="apps-share-chips-icon apps-share-chips-icon-x" ng-click="deleteInviterEmail($index)"></span>
                                 </div>
@@ -21,7 +21,8 @@
                          aria-autocomplete="list" 
                          placeholder="add more people..." 
                          aria-label="add more people..." 
-                         ng-model="email"></textarea>
+                         ng-model="email"
+                         style="min-width: 162px"></textarea>
                     </div>
                     <div class="suggested-recipients" role="listbox" aria-hidden="true" style="user-select: none; display: none;">
                         <div class="suggested-recipients-content"></div>
