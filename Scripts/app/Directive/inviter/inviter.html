@@ -1,31 +1,22 @@
 <div>
-    <div class="simple-sharing-people-heading" role="heading" aria-level="2">Share <span class="pidor">Board name</span> with other</div>
-    <div class="simple-sharing-inviter">
-        <div>
+    <div class="sharing-inviter-contents">
+        <div class="sharing-people-heading">Share <span class="sharing-people-heading-bolder">Board name</span> with other</div>
+        <div class="sharing-inviter">
             <div class="inviter">
-                <div class="inviter-recipient-area" style="width: 423px;">
+                <div class="inviter-recipient-area">
                     <div class="apps-share-chips-editor">
-                        <input class="apps-share-chips-editor-hidden-input" aria-hidden="true" tabindex="-1" aria-activedescendant=":1k">
-                        <div id=":1k" role="group"></div>
-                        <span class="apps-share-chips-container" ng-if="inviterEmails.length > 0"  ng-repeat="email in inviterEmails track by $index" >
-                            <span class="apps-share-chips-chip" ng-class={'apps-share-chips-chip-warning':!email.validEmail} id=":2i" aria-selected="false" tabindex="-1" style="user-select: none;">
-                                <div class="apps-share-chips-chip-content" style="max-width: 348px;">{{email.emailValue}}</div>
+                        <span class="apps-share-chips-container" ng-if="inviterEmails.length > 0" ng-repeat="email in inviterEmails track by $index" >
+                            <span class="apps-share-chips-chip" ng-class={'apps-share-chips-chip-warning':!email.validEmail} tabindex="-1">
+                                <div class="apps-share-chips-chip-content">{{email.emailValue}}</div>
                                 <div class="apps-share-chips-icon-wrapper">
                                     <span class="apps-share-chips-icon apps-share-chips-icon-x" ng-click="deleteInviterEmail($index)"></span>
                                 </div>
                             </span>
                         </span>
                         <textarea 
-                        class="apps-share-chips-input"
-                         role="combobox" 
-                         aria-autocomplete="list" 
-                         placeholder="add more people..." 
-                         aria-label="add more people..." 
-                         ng-model="email"
-                         style="min-width: 162px"></textarea>
-                    </div>
-                    <div class="suggested-recipients" role="listbox" aria-hidden="true" style="user-select: none; display: none;">
-                        <div class="suggested-recipients-content"></div>
+                            class="apps-share-chips-input" 
+                            placeholder="add more people..." 
+                            ng-model="email"></textarea>
                     </div>
                 </div>
             </div>
