@@ -4,10 +4,14 @@
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
         <script src="node_modules/angular/angular.min.js"></script>
         <script src="Scripts/app/appInviter.js"></script>
-        <script src="Scripts/app/Directive/inviter/inviter.js"></script>
+        <script src="Scripts/app/Controller/inviter.ctrl.js"></script>
+        <script src="Scripts/app/Directive/inviter/inviter.drv.js"></script>
     </head>
-    <body ng-app="ngAppInviter">
-        <inviter ng-model="emails" style="width: 468px; height: 320px; background-color: #f5f5f5; padding-left: 32px;"></inviter>
-        {{emails | json}}
+    <body ng-app="ngAppInviter" ng-controller="InviterController">
+        <inviter ng-model="emails" added-email="addedEmail" style="width: 500px; height: 221px; background-color: #f5f5f5;"></inviter>
+        <div class="container-btns">
+                <span class="btn-container"><div ng-click="generateEmail()" class="btn">Add email</div></span>
+                <span><div class="btn" ng-click="emailCount()">Get email count</div></span>
+        </div>
     </body>
 </html>
