@@ -37,7 +37,7 @@ ngAppInviter.directive('inviter',[function(){
                 }
             }
             
-            element.on('keydown', function(event){ 
+            element.on('keydown', (event) => { 
                 if  (event.keyCode == enterKey || event.keyCode == commaKey){
                     addEmail(event);
                 }
@@ -46,11 +46,11 @@ ngAppInviter.directive('inviter',[function(){
                 } 
             });
 
-            element.on('focusout', function(event){
+            element.on('focusout', (event) => {
                 addEmail(event);                
             });
 
-            scope.deleteInviterEmail = function(index){
+            scope.deleteInviterEmail = (index) => {
                 scope.inviterEmails.splice(index, 1);
                 
             };
