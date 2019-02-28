@@ -134,6 +134,7 @@
     vertical-align: top;
     display: inline-block;
     color: white;
+    cursor: pointer;
 }
 
 .container-btns{
